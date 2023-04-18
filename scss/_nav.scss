@@ -2,7 +2,7 @@
 
 .botonera {
     background-color: $keyColor;
-    font-family: 'playfair display';
+    font-family: $mainFont;
 
     img {
         width: 100px;
@@ -14,7 +14,7 @@
                 &:hover {
                     color: rgb(241, 212, 148);
                     text-decoration: underline;
-                    font-family: 'playfair display';
+                    font-family: $mainFont;
                 }
             }
         }
@@ -24,17 +24,7 @@
 
 .navbar-nav .nav-link {
     color: rgb(236, 220, 198);
-    font-family: 'playfair display';
+    font-family: $mainFont;
     font-weight: 300;
     font-size: 20px;
-}
-
-.btn-brown {
-    background-color: burlywood;
-
-    &:hover {
-        background-color: rgb(168, 142, 107);
-        text-decoration: underline;
-    }
-
 }

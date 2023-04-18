@@ -11,52 +11,75 @@
     justify-content: center;
 }
 
-#indicee {
-    margin-top: 100px;
+.indicee {
+    margin-top: 80px;
     display: grid;
+    gap: 5px;
     padding: 20px 20px 20px 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 2fr);
     grid-template-rows: 200px 200px;
     grid-template-areas:
+
         "img1 text1 img3 img4"
         "text2 img2 img3 img5";
+}
 
-    .texto1 {
-        margin-top: 50px;
-        grid-area: text1;
-        text-align: center;
-        font-size: 0.8em;
-        background-color: $secondaryColor;
+.texto1 {
+    margin-top: 40px;
+    grid-area: text1;
+    text-align: center;
+    font-size: 0.8em;
+    justify-content: center;
+    background-color: $secondaryColor;
+}
+
+.imagen1 {
+    grid-area: img1;
+    img{
+        width: 100%;
+        height: 100%;
     }
+}
 
-    .imagen1 {
-        grid-area: img1;
+.texto2 {
+    margin-top: 40px;
+    grid-area: text2;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8em;
+    background-color: $secondaryColor;
+}
+
+.imagen2 {
+    grid-area: img2;
+    img{
+        width: 100%;
+        height: 100%;
     }
+}
 
-    .texto2 {
-        margin-top: 40px;
-        grid-area: text2;
-        text-align: center;
-        font-size: 0.8em;
-        background-color: $secondaryColor;
+.imagen3 {
+    grid-area: img3;
+    img{
+        width: 100%;
+        height: 100%;
     }
+}
 
-    .imagen2 {
-        grid-area: img2;
+.imagen4 {
+    grid-area: img4;
+    img{
+        width: 100%;
+        height: 100%;
     }
+}
 
-    .imagen3 {
-        grid-area: img3;
+.imagen5 {
+    grid-area: img5;
+    img{
+        width: 100%;
+        height: 100%;
     }
-
-    .imagen4 {
-        grid-area: img4;
-    }
-
-    .imagen5 {
-        grid-area: img5;
-    }
-
 }
 
 .flex-container {
@@ -64,12 +87,12 @@
     flex-flow: wrap;
     text-align: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
 
     img {
         margin-left: 22px;
         max-width: 300px;
-        padding: 1rem;
+        padding: 10px 10px 10px 10px;
         margin-bottom: 30px;
 
         &:hover {
